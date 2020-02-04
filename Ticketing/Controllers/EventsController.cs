@@ -20,14 +20,18 @@ namespace Ticketing.Controllers
             _context = context;
         }
 
-        // GET: api/Events
+        /// <summary>
+        /// GET: api/Events
+        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Event>>> GetEvents()
         {
             return await _context.Events.ToListAsync();
         }
 
-        // GET: api/Events/5
+        /// <summary>
+        /// GET: api/Events/5
+        /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<Event>> GetEvent(Guid id)
         {
@@ -41,9 +45,11 @@ namespace Ticketing.Controllers
             return @event;
         }
 
-        // PUT: api/Events/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// PUT: api/Events/5
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:////aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEvent(Guid id, Event @event)
         {
@@ -73,9 +79,11 @@ namespace Ticketing.Controllers
             return NoContent();
         }
 
-        // POST: api/Events
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// POST: api/Events
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:////aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPost]
         public async Task<ActionResult<Event>> PostEvent(Event @event)
         {
@@ -85,7 +93,9 @@ namespace Ticketing.Controllers
             return CreatedAtAction("GetEvent", new { id = @event.Id }, @event);
         }
 
-        // DELETE: api/Events/5
+        /// <summary>
+        /// DELETE: api/Events/5
+        /// </summary>
         [HttpDelete("{id}")]
         public async Task<ActionResult<Event>> DeleteEvent(Guid id)
         {

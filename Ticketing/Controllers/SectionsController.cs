@@ -20,14 +20,18 @@ namespace Ticketing.Controllers
             _context = context;
         }
 
-        // GET: api/Sections
+        /// <summary>
+        /// GET: api/Sections
+        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Section>>> GetSections()
         {
             return await _context.Sections.ToListAsync();
         }
 
-        // GET: api/Sections/5
+        /// <summary>
+        /// GET: api/Sections/5
+        /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<Section>> GetSection(Guid id)
         {
@@ -41,9 +45,11 @@ namespace Ticketing.Controllers
             return section;
         }
 
-        // PUT: api/Sections/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// PUT: api/Sections/5
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutSection(Guid id, Section section)
         {
@@ -73,9 +79,11 @@ namespace Ticketing.Controllers
             return NoContent();
         }
 
-        // POST: api/Sections
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// POST: api/Sections
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPost]
         public async Task<ActionResult<Section>> PostSection(Section section)
         {
@@ -85,7 +93,9 @@ namespace Ticketing.Controllers
             return CreatedAtAction("GetSection", new { id = section.Id }, section);
         }
 
-        // DELETE: api/Sections/5
+        /// <summary>
+        /// DELETE: api/Sections/5
+        /// </summary>
         [HttpDelete("{id}")]
         public async Task<ActionResult<Section>> DeleteSection(Guid id)
         {

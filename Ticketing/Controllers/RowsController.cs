@@ -20,14 +20,18 @@ namespace Ticketing.Controllers
             _context = context;
         }
 
-        // GET: api/Rows
+        /// <summary>
+        /// GET: api/Rows
+        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Row>>> GetRows()
         {
             return await _context.Rows.ToListAsync();
         }
 
-        // GET: api/Rows/5
+        /// <summary>
+        /// GET: api/Rows/5
+        /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<Row>> GetRow(Guid id)
         {
@@ -41,9 +45,11 @@ namespace Ticketing.Controllers
             return row;
         }
 
-        // PUT: api/Rows/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// PUT: api/Rows/5
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutRow(Guid id, Row row)
         {
@@ -73,9 +79,11 @@ namespace Ticketing.Controllers
             return NoContent();
         }
 
-        // POST: api/Rows
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// POST: api/Rows
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPost]
         public async Task<ActionResult<Row>> PostRow(Row row)
         {
@@ -85,7 +93,9 @@ namespace Ticketing.Controllers
             return CreatedAtAction("GetRow", new { id = row.Id }, row);
         }
 
-        // DELETE: api/Rows/5
+        /// <summary>
+        /// DELETE: api/Rows/5
+        /// </summary>
         [HttpDelete("{id}")]
         public async Task<ActionResult<Row>> DeleteRow(Guid id)
         {

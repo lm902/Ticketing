@@ -20,14 +20,18 @@ namespace Ticketing.Controllers
             _context = context;
         }
 
-        // GET: api/TicketPurchaseSeats
+        /// <summary>
+        /// GET: api/TicketPurchaseSeats
+        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TicketPurchaseSeat>>> GetTicketPurchaseSeats()
         {
             return await _context.TicketPurchaseSeats.ToListAsync();
         }
 
-        // GET: api/TicketPurchaseSeats/5
+        /// <summary>
+        /// GET: api/TicketPurchaseSeats/5
+        /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<TicketPurchaseSeat>> GetTicketPurchaseSeat(Guid id)
         {
@@ -41,9 +45,11 @@ namespace Ticketing.Controllers
             return ticketPurchaseSeat;
         }
 
-        // PUT: api/TicketPurchaseSeats/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// PUT: api/TicketPurchaseSeats/5
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTicketPurchaseSeat(Guid id, TicketPurchaseSeat ticketPurchaseSeat)
         {
@@ -73,9 +79,11 @@ namespace Ticketing.Controllers
             return NoContent();
         }
 
-        // POST: api/TicketPurchaseSeats
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// POST: api/TicketPurchaseSeats
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPost]
         public async Task<ActionResult<TicketPurchaseSeat>> PostTicketPurchaseSeat(TicketPurchaseSeat ticketPurchaseSeat)
         {
@@ -85,7 +93,9 @@ namespace Ticketing.Controllers
             return CreatedAtAction("GetTicketPurchaseSeat", new { id = ticketPurchaseSeat.Id }, ticketPurchaseSeat);
         }
 
-        // DELETE: api/TicketPurchaseSeats/5
+        /// <summary>
+        /// DELETE: api/TicketPurchaseSeats/5
+        /// </summary>
         [HttpDelete("{id}")]
         public async Task<ActionResult<TicketPurchaseSeat>> DeleteTicketPurchaseSeat(Guid id)
         {

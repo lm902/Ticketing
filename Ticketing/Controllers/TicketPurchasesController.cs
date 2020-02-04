@@ -20,14 +20,18 @@ namespace Ticketing.Controllers
             _context = context;
         }
 
-        // GET: api/TicketPurchases
+        /// <summary>
+        /// GET: api/TicketPurchases
+        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TicketPurchase>>> GetTicketPurchases()
         {
             return await _context.TicketPurchases.ToListAsync();
         }
 
-        // GET: api/TicketPurchases/5
+        /// <summary>
+        /// GET: api/TicketPurchases/5
+        /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<TicketPurchase>> GetTicketPurchase(Guid id)
         {
@@ -41,9 +45,11 @@ namespace Ticketing.Controllers
             return ticketPurchase;
         }
 
-        // PUT: api/TicketPurchases/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// PUT: api/TicketPurchases/5
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTicketPurchase(Guid id, TicketPurchase ticketPurchase)
         {
@@ -73,9 +79,11 @@ namespace Ticketing.Controllers
             return NoContent();
         }
 
-        // POST: api/TicketPurchases
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// POST: api/TicketPurchases
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPost]
         public async Task<ActionResult<TicketPurchase>> PostTicketPurchase(TicketPurchase ticketPurchase)
         {
@@ -85,7 +93,9 @@ namespace Ticketing.Controllers
             return CreatedAtAction("GetTicketPurchase", new { id = ticketPurchase.Id }, ticketPurchase);
         }
 
-        // DELETE: api/TicketPurchases/5
+        /// <summary>
+        /// DELETE: api/TicketPurchases/5
+        /// </summary>
         [HttpDelete("{id}")]
         public async Task<ActionResult<TicketPurchase>> DeleteTicketPurchase(Guid id)
         {

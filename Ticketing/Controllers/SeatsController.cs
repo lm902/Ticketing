@@ -20,14 +20,18 @@ namespace Ticketing.Controllers
             _context = context;
         }
 
-        // GET: api/Seats
+        /// <summary>
+        /// GET: api/Seats
+        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Seat>>> GetSeats()
         {
             return await _context.Seats.ToListAsync();
         }
 
-        // GET: api/Seats/5
+        /// <summary>
+        /// GET: api/Seats/5
+        /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<Seat>> GetSeat(Guid id)
         {
@@ -41,9 +45,11 @@ namespace Ticketing.Controllers
             return seat;
         }
 
-        // PUT: api/Seats/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// PUT: api/Seats/5
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutSeat(Guid id, Seat seat)
         {
@@ -73,9 +79,11 @@ namespace Ticketing.Controllers
             return NoContent();
         }
 
-        // POST: api/Seats
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// POST: api/Seats
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPost]
         public async Task<ActionResult<Seat>> PostSeat(Seat seat)
         {
@@ -85,7 +93,9 @@ namespace Ticketing.Controllers
             return CreatedAtAction("GetSeat", new { id = seat.Id }, seat);
         }
 
-        // DELETE: api/Seats/5
+        /// <summary>
+        /// DELETE: api/Seats/5
+        /// </summary>
         [HttpDelete("{id}")]
         public async Task<ActionResult<Seat>> DeleteSeat(Guid id)
         {

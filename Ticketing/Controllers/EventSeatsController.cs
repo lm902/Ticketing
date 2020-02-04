@@ -20,14 +20,18 @@ namespace Ticketing.Controllers
             _context = context;
         }
 
-        // GET: api/EventSeats
+        /// <summary>
+        /// GET: api/EventSeats
+        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<EventSeat>>> GetEventSeats()
         {
             return await _context.EventSeats.ToListAsync();
         }
 
-        // GET: api/EventSeats/5
+        /// <summary>
+        /// GET: api/EventSeats/5
+        /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<EventSeat>> GetEventSeat(Guid id)
         {
@@ -41,9 +45,11 @@ namespace Ticketing.Controllers
             return eventSeat;
         }
 
-        // PUT: api/EventSeats/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// PUT: api/EventSeats/5
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEventSeat(Guid id, EventSeat eventSeat)
         {
@@ -73,9 +79,11 @@ namespace Ticketing.Controllers
             return NoContent();
         }
 
-        // POST: api/EventSeats
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// POST: api/EventSeats
+        /// To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        /// more details see https:///aka.ms/RazorPagesCRUD.
+        /// </summary>
         [HttpPost]
         public async Task<ActionResult<EventSeat>> PostEventSeat(EventSeat eventSeat)
         {
@@ -85,7 +93,9 @@ namespace Ticketing.Controllers
             return CreatedAtAction("GetEventSeat", new { id = eventSeat.Id }, eventSeat);
         }
 
-        // DELETE: api/EventSeats/5
+        /// <summary>
+        /// DELETE: api/EventSeats/5
+        /// </summary>
         [HttpDelete("{id}")]
         public async Task<ActionResult<EventSeat>> DeleteEventSeat(Guid id)
         {
