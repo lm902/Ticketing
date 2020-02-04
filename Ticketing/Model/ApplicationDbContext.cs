@@ -18,20 +18,20 @@ namespace Ticketing.Model
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            var events = new List<object>();
+            var events = new List<Event>();
             var venues = new List<Venue>();
             for (var e = 1; e <= 5; e++)
             {
-                var sections = new List<object>();
+                var sections = new List<Section>();
                 for (var s = 1; s <= 2; s++)
                 {
-                    var rows = new List<object>();
+                    var rows = new List<Row>();
                     for (var r = 1; r <= 5; r++)
                     {
-                        var seats = new List<object>();
+                        var seats = new List<Seat>();
                         for (var t = 1; t <= 10; t++)
                         {
-                            seats.Add(new
+                            seats.Add(new Seat
                             {
                                 Id = new Guid(0, 0, 1, 0, 0, 0, 0, (byte)e, (byte)s, (byte)r, (byte)t),
                                 Name = $"Venue {e} Section {s} Row {r} Seat {t}",
@@ -40,7 +40,7 @@ namespace Ticketing.Model
                             });
                         }
                         builder.Entity<Seat>().HasData(seats);
-                        rows.Add(new
+                        rows.Add(new Row
                         {
                             Id = new Guid(0, 0, 1, 0, 0, 0, 0, (byte)e, (byte)s, (byte)r, 0),
                             Name = $"Venue {e} Section {s} Row {r}",
@@ -48,7 +48,7 @@ namespace Ticketing.Model
                         });
                     }
                     builder.Entity<Row>().HasData(rows);
-                    sections.Add(new
+                    sections.Add(new Section
                     {
                         Id = new Guid(0, 0, 1, 0, 0, 0, 0, (byte)e, (byte)s, 0, 0),
                         Name = $"Venue {e} Section {s}",
@@ -63,7 +63,7 @@ namespace Ticketing.Model
                     Name = $"Venue {e}"
                 };
                 venues.Add(venue);
-                events.Add(new
+                events.Add(new Event
                 {
                     Id = new Guid(0, 0, 1, 0, 0, 0, (byte)e, 0, 0, 0, 0),
                     Name = $"Event {e}",

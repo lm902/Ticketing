@@ -10,6 +10,6 @@ namespace Ticketing.Model
         [Required]
         public string Name { get; set; }
         public int? Capacity { get; set; }
-        public List<Section> Sections { get; set; }
+        public virtual List<Section> Sections { get; set; }
     }
 }

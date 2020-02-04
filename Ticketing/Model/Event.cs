@@ -10,6 +10,7 @@ namespace Ticketing.Model
         [Required]
         public string Name { get; set; }
         [Required]
-        public Venue Venue { get; set; }
+        public virtual Venue Venue { get; set; }
+        public Guid VenueId { get; set; }
     }
 }

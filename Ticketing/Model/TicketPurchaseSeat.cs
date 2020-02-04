@@ -8,7 +8,8 @@ namespace Ticketing.Model
     {
         public Guid Id { get; set; }
         [Required]
-        public EventSeat EventSeat { get; set; }
+        public virtual EventSeat EventSeat { get; set; }
+        public Guid EventSeatId { get; set; }
         [Column(TypeName = "money")]
         public decimal Subtotal { get; set; }
     }

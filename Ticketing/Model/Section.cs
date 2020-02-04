@@ -9,6 +9,8 @@ namespace Ticketing.Model
         public Guid Id { get; set; }
         [Required]
         public string Name { get; set; }
-        public List<Row> Rows { get; set; }
+        public virtual List<Row> Rows { get; set; }
+        [Required]
+        public Guid VenueId { get; set; }
     }
 }

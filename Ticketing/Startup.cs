@@ -32,6 +32,7 @@ namespace Ticketing
             services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
+                options.UseLazyLoadingProxies();
             });
 
             services.AddSwaggerGen(options =>

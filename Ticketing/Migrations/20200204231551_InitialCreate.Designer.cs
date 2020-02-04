@@ -9,7 +9,7 @@ using Ticketing.Model;
 namespace Ticketing.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200204224908_InitialCreate")]
+    [Migration("20200204231551_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -104,7 +104,7 @@ namespace Ticketing.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<Guid?>("SectionId")
+                    b.Property<Guid>("SectionId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -429,7 +429,7 @@ namespace Ticketing.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("money");
 
-                    b.Property<Guid?>("RowId")
+                    b.Property<Guid>("RowId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -443,3500 +443,3500 @@ namespace Ticketing.Migrations
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010101"),
                             Name = "Venue 1 Section 1 Row 1 Seat 1",
-                            Price = 6.80m,
+                            Price = 7.46m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010102"),
                             Name = "Venue 1 Section 1 Row 1 Seat 2",
-                            Price = 6.91m,
+                            Price = 3.11m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010103"),
                             Name = "Venue 1 Section 1 Row 1 Seat 3",
-                            Price = 9.81m,
+                            Price = 0.10m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010104"),
                             Name = "Venue 1 Section 1 Row 1 Seat 4",
-                            Price = 7.61m,
+                            Price = 0.86m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010105"),
                             Name = "Venue 1 Section 1 Row 1 Seat 5",
-                            Price = 1.47m,
+                            Price = 0.36m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010106"),
                             Name = "Venue 1 Section 1 Row 1 Seat 6",
-                            Price = 2.55m,
+                            Price = 2.19m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010107"),
                             Name = "Venue 1 Section 1 Row 1 Seat 7",
-                            Price = 5.08m,
+                            Price = 8.65m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010108"),
                             Name = "Venue 1 Section 1 Row 1 Seat 8",
-                            Price = 8.06m,
+                            Price = 2.82m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010109"),
                             Name = "Venue 1 Section 1 Row 1 Seat 9",
-                            Price = 3.99m,
+                            Price = 2.92m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000101010a"),
                             Name = "Venue 1 Section 1 Row 1 Seat 10",
-                            Price = 0.24m,
+                            Price = 6.16m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010201"),
                             Name = "Venue 1 Section 1 Row 2 Seat 1",
-                            Price = 0.98m,
+                            Price = 9.09m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010202"),
                             Name = "Venue 1 Section 1 Row 2 Seat 2",
-                            Price = 7.23m,
+                            Price = 6.03m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010203"),
                             Name = "Venue 1 Section 1 Row 2 Seat 3",
-                            Price = 7.53m,
+                            Price = 6.45m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010204"),
                             Name = "Venue 1 Section 1 Row 2 Seat 4",
-                            Price = 1.43m,
+                            Price = 1.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010205"),
                             Name = "Venue 1 Section 1 Row 2 Seat 5",
-                            Price = 7.18m,
+                            Price = 2.88m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010206"),
                             Name = "Venue 1 Section 1 Row 2 Seat 6",
-                            Price = 1.05m,
+                            Price = 8.91m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010207"),
                             Name = "Venue 1 Section 1 Row 2 Seat 7",
-                            Price = 0.92m,
+                            Price = 6.00m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010208"),
                             Name = "Venue 1 Section 1 Row 2 Seat 8",
-                            Price = 9.54m,
+                            Price = 2.56m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010209"),
                             Name = "Venue 1 Section 1 Row 2 Seat 9",
-                            Price = 5.91m,
+                            Price = 2.11m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000101020a"),
                             Name = "Venue 1 Section 1 Row 2 Seat 10",
-                            Price = 1.44m,
+                            Price = 7.23m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010301"),
                             Name = "Venue 1 Section 1 Row 3 Seat 1",
-                            Price = 2.36m,
+                            Price = 9.19m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010302"),
                             Name = "Venue 1 Section 1 Row 3 Seat 2",
-                            Price = 7.26m,
+                            Price = 2.93m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010303"),
                             Name = "Venue 1 Section 1 Row 3 Seat 3",
-                            Price = 6.69m,
+                            Price = 5.36m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010304"),
                             Name = "Venue 1 Section 1 Row 3 Seat 4",
-                            Price = 4.58m,
+                            Price = 2.68m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010305"),
                             Name = "Venue 1 Section 1 Row 3 Seat 5",
-                            Price = 7.14m,
+                            Price = 2.84m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010306"),
                             Name = "Venue 1 Section 1 Row 3 Seat 6",
-                            Price = 1.51m,
+                            Price = 2.76m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010307"),
                             Name = "Venue 1 Section 1 Row 3 Seat 7",
-                            Price = 3.23m,
+                            Price = 4.13m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010308"),
                             Name = "Venue 1 Section 1 Row 3 Seat 8",
-                            Price = 6.30m,
+                            Price = 4.56m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010309"),
                             Name = "Venue 1 Section 1 Row 3 Seat 9",
-                            Price = 9.97m,
+                            Price = 0.69m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000101030a"),
                             Name = "Venue 1 Section 1 Row 3 Seat 10",
-                            Price = 8.42m,
+                            Price = 4.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010401"),
                             Name = "Venue 1 Section 1 Row 4 Seat 1",
-                            Price = 1.54m,
+                            Price = 0.56m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010402"),
                             Name = "Venue 1 Section 1 Row 4 Seat 2",
-                            Price = 0.60m,
+                            Price = 8.21m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010403"),
                             Name = "Venue 1 Section 1 Row 4 Seat 3",
-                            Price = 0.41m,
+                            Price = 7.99m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010404"),
                             Name = "Venue 1 Section 1 Row 4 Seat 4",
-                            Price = 2.54m,
+                            Price = 8.83m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010405"),
                             Name = "Venue 1 Section 1 Row 4 Seat 5",
-                            Price = 9.80m,
+                            Price = 1.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010406"),
                             Name = "Venue 1 Section 1 Row 4 Seat 6",
-                            Price = 8.22m,
+                            Price = 4.79m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010407"),
                             Name = "Venue 1 Section 1 Row 4 Seat 7",
-                            Price = 7.73m,
+                            Price = 7.61m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010408"),
                             Name = "Venue 1 Section 1 Row 4 Seat 8",
-                            Price = 6.91m,
+                            Price = 5.71m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010409"),
                             Name = "Venue 1 Section 1 Row 4 Seat 9",
-                            Price = 3.04m,
+                            Price = 6.86m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000101040a"),
                             Name = "Venue 1 Section 1 Row 4 Seat 10",
-                            Price = 0.03m,
+                            Price = 2.71m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010501"),
                             Name = "Venue 1 Section 1 Row 5 Seat 1",
-                            Price = 8.99m,
+                            Price = 8.53m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010502"),
                             Name = "Venue 1 Section 1 Row 5 Seat 2",
-                            Price = 4.47m,
+                            Price = 9.77m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010503"),
                             Name = "Venue 1 Section 1 Row 5 Seat 3",
-                            Price = 3.82m,
+                            Price = 5.27m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010504"),
                             Name = "Venue 1 Section 1 Row 5 Seat 4",
-                            Price = 0.47m,
+                            Price = 7.31m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010505"),
                             Name = "Venue 1 Section 1 Row 5 Seat 5",
-                            Price = 2.60m,
+                            Price = 5.68m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010506"),
                             Name = "Venue 1 Section 1 Row 5 Seat 6",
-                            Price = 0.56m,
+                            Price = 8.06m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010507"),
                             Name = "Venue 1 Section 1 Row 5 Seat 7",
-                            Price = 3.74m,
+                            Price = 4.25m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010508"),
                             Name = "Venue 1 Section 1 Row 5 Seat 8",
-                            Price = 8.89m,
+                            Price = 7.23m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001010509"),
                             Name = "Venue 1 Section 1 Row 5 Seat 9",
-                            Price = 0.16m,
+                            Price = 4.39m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000101050a"),
                             Name = "Venue 1 Section 1 Row 5 Seat 10",
-                            Price = 2.59m,
+                            Price = 5.87m,
                             RowId = new Guid("00000000-0000-0001-0000-000001010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020101"),
                             Name = "Venue 1 Section 2 Row 1 Seat 1",
-                            Price = 7.56m,
+                            Price = 9.00m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020102"),
                             Name = "Venue 1 Section 2 Row 1 Seat 2",
-                            Price = 6.71m,
+                            Price = 9.07m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020103"),
                             Name = "Venue 1 Section 2 Row 1 Seat 3",
-                            Price = 2.07m,
+                            Price = 1.03m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020104"),
                             Name = "Venue 1 Section 2 Row 1 Seat 4",
-                            Price = 9.72m,
+                            Price = 8.00m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020105"),
                             Name = "Venue 1 Section 2 Row 1 Seat 5",
-                            Price = 1.21m,
+                            Price = 1.24m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020106"),
                             Name = "Venue 1 Section 2 Row 1 Seat 6",
-                            Price = 6.80m,
+                            Price = 1.79m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020107"),
                             Name = "Venue 1 Section 2 Row 1 Seat 7",
-                            Price = 7.48m,
+                            Price = 5.01m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020108"),
                             Name = "Venue 1 Section 2 Row 1 Seat 8",
-                            Price = 2.49m,
+                            Price = 4.69m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020109"),
                             Name = "Venue 1 Section 2 Row 1 Seat 9",
-                            Price = 7.73m,
+                            Price = 5.28m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000102010a"),
                             Name = "Venue 1 Section 2 Row 1 Seat 10",
-                            Price = 7.22m,
+                            Price = 4.86m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020201"),
                             Name = "Venue 1 Section 2 Row 2 Seat 1",
-                            Price = 6.58m,
+                            Price = 5.32m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020202"),
                             Name = "Venue 1 Section 2 Row 2 Seat 2",
-                            Price = 6.04m,
+                            Price = 1.34m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020203"),
                             Name = "Venue 1 Section 2 Row 2 Seat 3",
-                            Price = 5.35m,
+                            Price = 9.39m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020204"),
                             Name = "Venue 1 Section 2 Row 2 Seat 4",
-                            Price = 2.84m,
+                            Price = 5.83m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020205"),
                             Name = "Venue 1 Section 2 Row 2 Seat 5",
-                            Price = 5.96m,
+                            Price = 2.86m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020206"),
                             Name = "Venue 1 Section 2 Row 2 Seat 6",
-                            Price = 7.64m,
+                            Price = 8.14m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020207"),
                             Name = "Venue 1 Section 2 Row 2 Seat 7",
-                            Price = 4.08m,
+                            Price = 5.30m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020208"),
                             Name = "Venue 1 Section 2 Row 2 Seat 8",
-                            Price = 2.25m,
+                            Price = 4.87m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020209"),
                             Name = "Venue 1 Section 2 Row 2 Seat 9",
-                            Price = 8.89m,
+                            Price = 7.26m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000102020a"),
                             Name = "Venue 1 Section 2 Row 2 Seat 10",
-                            Price = 6.23m,
+                            Price = 5.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020301"),
                             Name = "Venue 1 Section 2 Row 3 Seat 1",
-                            Price = 0.57m,
+                            Price = 8.57m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020302"),
                             Name = "Venue 1 Section 2 Row 3 Seat 2",
-                            Price = 1.27m,
+                            Price = 7.55m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020303"),
                             Name = "Venue 1 Section 2 Row 3 Seat 3",
-                            Price = 3.77m,
+                            Price = 2.96m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020304"),
                             Name = "Venue 1 Section 2 Row 3 Seat 4",
-                            Price = 3.15m,
+                            Price = 6.66m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020305"),
                             Name = "Venue 1 Section 2 Row 3 Seat 5",
-                            Price = 9.71m,
+                            Price = 5.96m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020306"),
                             Name = "Venue 1 Section 2 Row 3 Seat 6",
-                            Price = 5.14m,
+                            Price = 6.68m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020307"),
                             Name = "Venue 1 Section 2 Row 3 Seat 7",
-                            Price = 0.71m,
+                            Price = 4.92m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020308"),
                             Name = "Venue 1 Section 2 Row 3 Seat 8",
-                            Price = 3.49m,
+                            Price = 5.31m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020309"),
                             Name = "Venue 1 Section 2 Row 3 Seat 9",
-                            Price = 9.24m,
+                            Price = 4.26m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000102030a"),
                             Name = "Venue 1 Section 2 Row 3 Seat 10",
-                            Price = 3.84m,
+                            Price = 2.04m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020401"),
                             Name = "Venue 1 Section 2 Row 4 Seat 1",
-                            Price = 5.03m,
+                            Price = 5.77m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020402"),
                             Name = "Venue 1 Section 2 Row 4 Seat 2",
-                            Price = 1.60m,
+                            Price = 4.17m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020403"),
                             Name = "Venue 1 Section 2 Row 4 Seat 3",
-                            Price = 3.41m,
+                            Price = 7.44m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020404"),
                             Name = "Venue 1 Section 2 Row 4 Seat 4",
-                            Price = 4.65m,
+                            Price = 2.08m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020405"),
                             Name = "Venue 1 Section 2 Row 4 Seat 5",
-                            Price = 8.12m,
+                            Price = 2.62m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020406"),
                             Name = "Venue 1 Section 2 Row 4 Seat 6",
-                            Price = 2.09m,
+                            Price = 8.75m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020407"),
                             Name = "Venue 1 Section 2 Row 4 Seat 7",
-                            Price = 5.79m,
+                            Price = 4.45m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020408"),
                             Name = "Venue 1 Section 2 Row 4 Seat 8",
-                            Price = 7.96m,
+                            Price = 7.25m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020409"),
                             Name = "Venue 1 Section 2 Row 4 Seat 9",
-                            Price = 8.60m,
+                            Price = 4.86m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000102040a"),
                             Name = "Venue 1 Section 2 Row 4 Seat 10",
-                            Price = 0.27m,
+                            Price = 6.83m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020501"),
                             Name = "Venue 1 Section 2 Row 5 Seat 1",
-                            Price = 8.00m,
+                            Price = 7.04m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020502"),
                             Name = "Venue 1 Section 2 Row 5 Seat 2",
-                            Price = 2.50m,
+                            Price = 0.18m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020503"),
                             Name = "Venue 1 Section 2 Row 5 Seat 3",
-                            Price = 6.44m,
+                            Price = 7.69m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020504"),
                             Name = "Venue 1 Section 2 Row 5 Seat 4",
-                            Price = 3.08m,
+                            Price = 9.26m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020505"),
                             Name = "Venue 1 Section 2 Row 5 Seat 5",
-                            Price = 0.71m,
+                            Price = 4.65m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020506"),
                             Name = "Venue 1 Section 2 Row 5 Seat 6",
-                            Price = 0.22m,
+                            Price = 4.44m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020507"),
                             Name = "Venue 1 Section 2 Row 5 Seat 7",
-                            Price = 6.39m,
+                            Price = 7.64m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020508"),
                             Name = "Venue 1 Section 2 Row 5 Seat 8",
-                            Price = 8.24m,
+                            Price = 6.71m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000001020509"),
                             Name = "Venue 1 Section 2 Row 5 Seat 9",
-                            Price = 1.76m,
+                            Price = 1.71m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000102050a"),
                             Name = "Venue 1 Section 2 Row 5 Seat 10",
-                            Price = 2.22m,
+                            Price = 4.80m,
                             RowId = new Guid("00000000-0000-0001-0000-000001020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010101"),
                             Name = "Venue 2 Section 1 Row 1 Seat 1",
-                            Price = 3.75m,
+                            Price = 0.02m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010102"),
                             Name = "Venue 2 Section 1 Row 1 Seat 2",
-                            Price = 8.76m,
+                            Price = 6.64m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010103"),
                             Name = "Venue 2 Section 1 Row 1 Seat 3",
-                            Price = 7.26m,
+                            Price = 7.23m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010104"),
                             Name = "Venue 2 Section 1 Row 1 Seat 4",
-                            Price = 1.19m,
+                            Price = 6.30m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010105"),
                             Name = "Venue 2 Section 1 Row 1 Seat 5",
-                            Price = 9.28m,
+                            Price = 4.56m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010106"),
                             Name = "Venue 2 Section 1 Row 1 Seat 6",
-                            Price = 3.55m,
+                            Price = 8.71m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010107"),
                             Name = "Venue 2 Section 1 Row 1 Seat 7",
-                            Price = 0.21m,
+                            Price = 3.37m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010108"),
                             Name = "Venue 2 Section 1 Row 1 Seat 8",
-                            Price = 6.19m,
+                            Price = 1.63m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010109"),
                             Name = "Venue 2 Section 1 Row 1 Seat 9",
-                            Price = 7.27m,
+                            Price = 9.30m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000201010a"),
                             Name = "Venue 2 Section 1 Row 1 Seat 10",
-                            Price = 3.32m,
+                            Price = 1.82m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010201"),
                             Name = "Venue 2 Section 1 Row 2 Seat 1",
-                            Price = 3.35m,
+                            Price = 4.13m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010202"),
                             Name = "Venue 2 Section 1 Row 2 Seat 2",
-                            Price = 1.25m,
+                            Price = 6.96m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010203"),
                             Name = "Venue 2 Section 1 Row 2 Seat 3",
-                            Price = 0.51m,
+                            Price = 7.69m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010204"),
                             Name = "Venue 2 Section 1 Row 2 Seat 4",
-                            Price = 1.15m,
+                            Price = 0.50m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010205"),
                             Name = "Venue 2 Section 1 Row 2 Seat 5",
-                            Price = 9.45m,
+                            Price = 6.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010206"),
                             Name = "Venue 2 Section 1 Row 2 Seat 6",
-                            Price = 2.24m,
+                            Price = 8.42m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010207"),
                             Name = "Venue 2 Section 1 Row 2 Seat 7",
-                            Price = 9.89m,
+                            Price = 1.17m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010208"),
                             Name = "Venue 2 Section 1 Row 2 Seat 8",
-                            Price = 7.97m,
+                            Price = 4.57m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010209"),
                             Name = "Venue 2 Section 1 Row 2 Seat 9",
-                            Price = 1.98m,
+                            Price = 0.47m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000201020a"),
                             Name = "Venue 2 Section 1 Row 2 Seat 10",
-                            Price = 1.14m,
+                            Price = 1.37m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010301"),
                             Name = "Venue 2 Section 1 Row 3 Seat 1",
-                            Price = 9.12m,
+                            Price = 0.95m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010302"),
                             Name = "Venue 2 Section 1 Row 3 Seat 2",
-                            Price = 3.38m,
+                            Price = 5.31m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010303"),
                             Name = "Venue 2 Section 1 Row 3 Seat 3",
-                            Price = 0.91m,
+                            Price = 7.28m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010304"),
                             Name = "Venue 2 Section 1 Row 3 Seat 4",
-                            Price = 5.89m,
+                            Price = 7.69m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010305"),
                             Name = "Venue 2 Section 1 Row 3 Seat 5",
-                            Price = 5.49m,
+                            Price = 5.57m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010306"),
                             Name = "Venue 2 Section 1 Row 3 Seat 6",
-                            Price = 5.33m,
+                            Price = 5.65m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010307"),
                             Name = "Venue 2 Section 1 Row 3 Seat 7",
-                            Price = 2.09m,
+                            Price = 7.13m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010308"),
                             Name = "Venue 2 Section 1 Row 3 Seat 8",
-                            Price = 7.95m,
+                            Price = 0.97m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010309"),
                             Name = "Venue 2 Section 1 Row 3 Seat 9",
-                            Price = 9.70m,
+                            Price = 9.28m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000201030a"),
                             Name = "Venue 2 Section 1 Row 3 Seat 10",
-                            Price = 6.76m,
+                            Price = 8.78m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010401"),
                             Name = "Venue 2 Section 1 Row 4 Seat 1",
-                            Price = 6.02m,
+                            Price = 6.31m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010402"),
                             Name = "Venue 2 Section 1 Row 4 Seat 2",
-                            Price = 9.73m,
+                            Price = 5.47m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010403"),
                             Name = "Venue 2 Section 1 Row 4 Seat 3",
-                            Price = 8.99m,
+                            Price = 0.86m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010404"),
                             Name = "Venue 2 Section 1 Row 4 Seat 4",
-                            Price = 4.28m,
+                            Price = 6.72m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010405"),
                             Name = "Venue 2 Section 1 Row 4 Seat 5",
-                            Price = 7.36m,
+                            Price = 9.28m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010406"),
                             Name = "Venue 2 Section 1 Row 4 Seat 6",
-                            Price = 3.54m,
+                            Price = 6.40m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010407"),
                             Name = "Venue 2 Section 1 Row 4 Seat 7",
-                            Price = 1.60m,
+                            Price = 4.20m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010408"),
                             Name = "Venue 2 Section 1 Row 4 Seat 8",
-                            Price = 9.48m,
+                            Price = 8.40m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010409"),
                             Name = "Venue 2 Section 1 Row 4 Seat 9",
-                            Price = 2.63m,
+                            Price = 4.78m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000201040a"),
                             Name = "Venue 2 Section 1 Row 4 Seat 10",
-                            Price = 1.83m,
+                            Price = 1.17m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010501"),
                             Name = "Venue 2 Section 1 Row 5 Seat 1",
-                            Price = 9.14m,
+                            Price = 2.64m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010502"),
                             Name = "Venue 2 Section 1 Row 5 Seat 2",
-                            Price = 6.86m,
+                            Price = 0.08m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010503"),
                             Name = "Venue 2 Section 1 Row 5 Seat 3",
-                            Price = 7.95m,
+                            Price = 5.21m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010504"),
                             Name = "Venue 2 Section 1 Row 5 Seat 4",
-                            Price = 2.54m,
+                            Price = 0.30m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010505"),
                             Name = "Venue 2 Section 1 Row 5 Seat 5",
-                            Price = 4.18m,
+                            Price = 9.96m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010506"),
                             Name = "Venue 2 Section 1 Row 5 Seat 6",
-                            Price = 4.01m,
+                            Price = 7.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010507"),
                             Name = "Venue 2 Section 1 Row 5 Seat 7",
-                            Price = 9.25m,
+                            Price = 9.76m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010508"),
                             Name = "Venue 2 Section 1 Row 5 Seat 8",
-                            Price = 2.55m,
+                            Price = 4.45m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002010509"),
                             Name = "Venue 2 Section 1 Row 5 Seat 9",
-                            Price = 0.89m,
+                            Price = 0.16m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000201050a"),
                             Name = "Venue 2 Section 1 Row 5 Seat 10",
-                            Price = 5.74m,
+                            Price = 3.49m,
                             RowId = new Guid("00000000-0000-0001-0000-000002010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020101"),
                             Name = "Venue 2 Section 2 Row 1 Seat 1",
-                            Price = 7.59m,
+                            Price = 0.54m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020102"),
                             Name = "Venue 2 Section 2 Row 1 Seat 2",
-                            Price = 5.68m,
+                            Price = 0.33m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020103"),
                             Name = "Venue 2 Section 2 Row 1 Seat 3",
-                            Price = 3.53m,
+                            Price = 3.50m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020104"),
                             Name = "Venue 2 Section 2 Row 1 Seat 4",
-                            Price = 7.89m,
+                            Price = 7.61m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020105"),
                             Name = "Venue 2 Section 2 Row 1 Seat 5",
-                            Price = 0.37m,
+                            Price = 1.11m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020106"),
                             Name = "Venue 2 Section 2 Row 1 Seat 6",
-                            Price = 7.63m,
+                            Price = 1.97m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020107"),
                             Name = "Venue 2 Section 2 Row 1 Seat 7",
-                            Price = 5.10m,
+                            Price = 6.62m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020108"),
                             Name = "Venue 2 Section 2 Row 1 Seat 8",
-                            Price = 8.64m,
+                            Price = 6.80m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020109"),
                             Name = "Venue 2 Section 2 Row 1 Seat 9",
-                            Price = 2.97m,
+                            Price = 7.99m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000202010a"),
                             Name = "Venue 2 Section 2 Row 1 Seat 10",
-                            Price = 1.21m,
+                            Price = 6.17m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020201"),
                             Name = "Venue 2 Section 2 Row 2 Seat 1",
-                            Price = 8.72m,
+                            Price = 8.84m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020202"),
                             Name = "Venue 2 Section 2 Row 2 Seat 2",
-                            Price = 9.51m,
+                            Price = 9.67m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020203"),
                             Name = "Venue 2 Section 2 Row 2 Seat 3",
-                            Price = 3.76m,
+                            Price = 9.62m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020204"),
                             Name = "Venue 2 Section 2 Row 2 Seat 4",
-                            Price = 7.77m,
+                            Price = 7.78m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020205"),
                             Name = "Venue 2 Section 2 Row 2 Seat 5",
-                            Price = 4.57m,
+                            Price = 2.77m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020206"),
                             Name = "Venue 2 Section 2 Row 2 Seat 6",
-                            Price = 0.88m,
+                            Price = 5.92m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020207"),
                             Name = "Venue 2 Section 2 Row 2 Seat 7",
-                            Price = 9.53m,
+                            Price = 3.36m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020208"),
                             Name = "Venue 2 Section 2 Row 2 Seat 8",
-                            Price = 3.49m,
+                            Price = 8.22m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020209"),
                             Name = "Venue 2 Section 2 Row 2 Seat 9",
-                            Price = 1.06m,
+                            Price = 8.48m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000202020a"),
                             Name = "Venue 2 Section 2 Row 2 Seat 10",
-                            Price = 3.17m,
+                            Price = 7.22m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020301"),
                             Name = "Venue 2 Section 2 Row 3 Seat 1",
-                            Price = 7.90m,
+                            Price = 1.48m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020302"),
                             Name = "Venue 2 Section 2 Row 3 Seat 2",
-                            Price = 7.68m,
+                            Price = 0.03m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020303"),
                             Name = "Venue 2 Section 2 Row 3 Seat 3",
-                            Price = 2.60m,
+                            Price = 7.05m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020304"),
                             Name = "Venue 2 Section 2 Row 3 Seat 4",
-                            Price = 7.41m,
+                            Price = 6.56m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020305"),
                             Name = "Venue 2 Section 2 Row 3 Seat 5",
-                            Price = 9.26m,
+                            Price = 5.99m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020306"),
                             Name = "Venue 2 Section 2 Row 3 Seat 6",
-                            Price = 9.52m,
+                            Price = 8.14m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020307"),
                             Name = "Venue 2 Section 2 Row 3 Seat 7",
-                            Price = 2.70m,
+                            Price = 7.36m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020308"),
                             Name = "Venue 2 Section 2 Row 3 Seat 8",
-                            Price = 5.64m,
+                            Price = 4.24m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020309"),
                             Name = "Venue 2 Section 2 Row 3 Seat 9",
-                            Price = 8.97m,
+                            Price = 5.00m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000202030a"),
                             Name = "Venue 2 Section 2 Row 3 Seat 10",
-                            Price = 8.74m,
+                            Price = 5.49m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020401"),
                             Name = "Venue 2 Section 2 Row 4 Seat 1",
-                            Price = 3.34m,
+                            Price = 3.15m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020402"),
                             Name = "Venue 2 Section 2 Row 4 Seat 2",
-                            Price = 6.81m,
+                            Price = 9.94m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020403"),
                             Name = "Venue 2 Section 2 Row 4 Seat 3",
-                            Price = 4.33m,
+                            Price = 8.07m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020404"),
                             Name = "Venue 2 Section 2 Row 4 Seat 4",
-                            Price = 1.22m,
+                            Price = 3.05m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020405"),
                             Name = "Venue 2 Section 2 Row 4 Seat 5",
-                            Price = 6.43m,
+                            Price = 5.51m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020406"),
                             Name = "Venue 2 Section 2 Row 4 Seat 6",
-                            Price = 7.60m,
+                            Price = 3.24m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020407"),
                             Name = "Venue 2 Section 2 Row 4 Seat 7",
-                            Price = 3.46m,
+                            Price = 9.24m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020408"),
                             Name = "Venue 2 Section 2 Row 4 Seat 8",
-                            Price = 8.36m,
+                            Price = 0.52m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020409"),
                             Name = "Venue 2 Section 2 Row 4 Seat 9",
-                            Price = 1.18m,
+                            Price = 2.88m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000202040a"),
                             Name = "Venue 2 Section 2 Row 4 Seat 10",
-                            Price = 6.99m,
+                            Price = 4.57m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020501"),
                             Name = "Venue 2 Section 2 Row 5 Seat 1",
-                            Price = 5.70m,
+                            Price = 7.04m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020502"),
                             Name = "Venue 2 Section 2 Row 5 Seat 2",
-                            Price = 0.22m,
+                            Price = 4.66m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020503"),
                             Name = "Venue 2 Section 2 Row 5 Seat 3",
-                            Price = 3.77m,
+                            Price = 7.67m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020504"),
                             Name = "Venue 2 Section 2 Row 5 Seat 4",
-                            Price = 8.69m,
+                            Price = 5.87m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020505"),
                             Name = "Venue 2 Section 2 Row 5 Seat 5",
-                            Price = 0.37m,
+                            Price = 9.59m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020506"),
                             Name = "Venue 2 Section 2 Row 5 Seat 6",
-                            Price = 6.89m,
+                            Price = 0.23m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020507"),
                             Name = "Venue 2 Section 2 Row 5 Seat 7",
-                            Price = 0.37m,
+                            Price = 7.72m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020508"),
                             Name = "Venue 2 Section 2 Row 5 Seat 8",
-                            Price = 7.44m,
+                            Price = 4.69m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000002020509"),
                             Name = "Venue 2 Section 2 Row 5 Seat 9",
-                            Price = 5.23m,
+                            Price = 4.79m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000202050a"),
                             Name = "Venue 2 Section 2 Row 5 Seat 10",
-                            Price = 0.56m,
+                            Price = 1.30m,
                             RowId = new Guid("00000000-0000-0001-0000-000002020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010101"),
                             Name = "Venue 3 Section 1 Row 1 Seat 1",
-                            Price = 1.75m,
+                            Price = 1.25m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010102"),
                             Name = "Venue 3 Section 1 Row 1 Seat 2",
-                            Price = 3.03m,
+                            Price = 8.80m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010103"),
                             Name = "Venue 3 Section 1 Row 1 Seat 3",
-                            Price = 8.75m,
+                            Price = 3.23m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010104"),
                             Name = "Venue 3 Section 1 Row 1 Seat 4",
-                            Price = 4.98m,
+                            Price = 0.21m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010105"),
                             Name = "Venue 3 Section 1 Row 1 Seat 5",
-                            Price = 5.10m,
+                            Price = 9.27m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010106"),
                             Name = "Venue 3 Section 1 Row 1 Seat 6",
-                            Price = 7.18m,
+                            Price = 7.77m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010107"),
                             Name = "Venue 3 Section 1 Row 1 Seat 7",
-                            Price = 0.35m,
+                            Price = 0.54m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010108"),
                             Name = "Venue 3 Section 1 Row 1 Seat 8",
-                            Price = 3.38m,
+                            Price = 4.19m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010109"),
                             Name = "Venue 3 Section 1 Row 1 Seat 9",
-                            Price = 5.89m,
+                            Price = 8.87m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000301010a"),
                             Name = "Venue 3 Section 1 Row 1 Seat 10",
-                            Price = 8.11m,
+                            Price = 0.23m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010201"),
                             Name = "Venue 3 Section 1 Row 2 Seat 1",
-                            Price = 2.19m,
+                            Price = 1.87m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010202"),
                             Name = "Venue 3 Section 1 Row 2 Seat 2",
-                            Price = 6.73m,
+                            Price = 9.64m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010203"),
                             Name = "Venue 3 Section 1 Row 2 Seat 3",
-                            Price = 6.94m,
+                            Price = 9.06m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010204"),
                             Name = "Venue 3 Section 1 Row 2 Seat 4",
-                            Price = 1.50m,
+                            Price = 9.76m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010205"),
                             Name = "Venue 3 Section 1 Row 2 Seat 5",
-                            Price = 5.13m,
+                            Price = 0.28m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010206"),
                             Name = "Venue 3 Section 1 Row 2 Seat 6",
-                            Price = 9.18m,
+                            Price = 6.17m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010207"),
                             Name = "Venue 3 Section 1 Row 2 Seat 7",
-                            Price = 2.45m,
+                            Price = 8.87m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010208"),
                             Name = "Venue 3 Section 1 Row 2 Seat 8",
-                            Price = 9.80m,
+                            Price = 3.83m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010209"),
                             Name = "Venue 3 Section 1 Row 2 Seat 9",
-                            Price = 8.61m,
+                            Price = 9.54m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000301020a"),
                             Name = "Venue 3 Section 1 Row 2 Seat 10",
-                            Price = 4.23m,
+                            Price = 6.80m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010301"),
                             Name = "Venue 3 Section 1 Row 3 Seat 1",
-                            Price = 4.69m,
+                            Price = 3.95m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010302"),
                             Name = "Venue 3 Section 1 Row 3 Seat 2",
-                            Price = 8.43m,
+                            Price = 0.10m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010303"),
                             Name = "Venue 3 Section 1 Row 3 Seat 3",
-                            Price = 9.57m,
+                            Price = 2.61m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010304"),
                             Name = "Venue 3 Section 1 Row 3 Seat 4",
-                            Price = 1.33m,
+                            Price = 1.17m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010305"),
                             Name = "Venue 3 Section 1 Row 3 Seat 5",
-                            Price = 4.74m,
+                            Price = 7.44m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010306"),
                             Name = "Venue 3 Section 1 Row 3 Seat 6",
-                            Price = 4.94m,
+                            Price = 4.09m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010307"),
                             Name = "Venue 3 Section 1 Row 3 Seat 7",
-                            Price = 1.17m,
+                            Price = 9.63m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010308"),
                             Name = "Venue 3 Section 1 Row 3 Seat 8",
-                            Price = 1.17m,
+                            Price = 8.45m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010309"),
                             Name = "Venue 3 Section 1 Row 3 Seat 9",
-                            Price = 4.30m,
+                            Price = 4.24m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000301030a"),
                             Name = "Venue 3 Section 1 Row 3 Seat 10",
-                            Price = 9.63m,
+                            Price = 3.02m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010401"),
                             Name = "Venue 3 Section 1 Row 4 Seat 1",
-                            Price = 6.41m,
+                            Price = 7.68m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010402"),
                             Name = "Venue 3 Section 1 Row 4 Seat 2",
-                            Price = 2.52m,
+                            Price = 9.94m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010403"),
                             Name = "Venue 3 Section 1 Row 4 Seat 3",
-                            Price = 7.67m,
+                            Price = 6.71m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010404"),
                             Name = "Venue 3 Section 1 Row 4 Seat 4",
-                            Price = 5.67m,
+                            Price = 0.96m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010405"),
                             Name = "Venue 3 Section 1 Row 4 Seat 5",
-                            Price = 4.25m,
+                            Price = 1.50m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010406"),
                             Name = "Venue 3 Section 1 Row 4 Seat 6",
-                            Price = 7.58m,
+                            Price = 1.62m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010407"),
                             Name = "Venue 3 Section 1 Row 4 Seat 7",
-                            Price = 5.32m,
+                            Price = 3.98m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010408"),
                             Name = "Venue 3 Section 1 Row 4 Seat 8",
-                            Price = 6.61m,
+                            Price = 5.12m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010409"),
                             Name = "Venue 3 Section 1 Row 4 Seat 9",
-                            Price = 3.38m,
+                            Price = 1.04m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000301040a"),
                             Name = "Venue 3 Section 1 Row 4 Seat 10",
-                            Price = 6.52m,
+                            Price = 5.00m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010501"),
                             Name = "Venue 3 Section 1 Row 5 Seat 1",
-                            Price = 4.51m,
+                            Price = 9.96m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010502"),
                             Name = "Venue 3 Section 1 Row 5 Seat 2",
-                            Price = 7.34m,
+                            Price = 2.30m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010503"),
                             Name = "Venue 3 Section 1 Row 5 Seat 3",
-                            Price = 9.73m,
+                            Price = 8.91m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010504"),
                             Name = "Venue 3 Section 1 Row 5 Seat 4",
-                            Price = 0.33m,
+                            Price = 9.91m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010505"),
                             Name = "Venue 3 Section 1 Row 5 Seat 5",
-                            Price = 2.06m,
+                            Price = 9.97m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010506"),
                             Name = "Venue 3 Section 1 Row 5 Seat 6",
-                            Price = 6.23m,
+                            Price = 4.66m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010507"),
                             Name = "Venue 3 Section 1 Row 5 Seat 7",
-                            Price = 0.55m,
+                            Price = 2.86m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010508"),
                             Name = "Venue 3 Section 1 Row 5 Seat 8",
-                            Price = 9.54m,
+                            Price = 5.17m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003010509"),
                             Name = "Venue 3 Section 1 Row 5 Seat 9",
-                            Price = 0.82m,
+                            Price = 2.85m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000301050a"),
                             Name = "Venue 3 Section 1 Row 5 Seat 10",
-                            Price = 8.46m,
+                            Price = 0.69m,
                             RowId = new Guid("00000000-0000-0001-0000-000003010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020101"),
                             Name = "Venue 3 Section 2 Row 1 Seat 1",
-                            Price = 1.71m,
+                            Price = 8.63m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020102"),
                             Name = "Venue 3 Section 2 Row 1 Seat 2",
-                            Price = 7.83m,
+                            Price = 1.15m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020103"),
                             Name = "Venue 3 Section 2 Row 1 Seat 3",
-                            Price = 6.10m,
+                            Price = 2.42m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020104"),
                             Name = "Venue 3 Section 2 Row 1 Seat 4",
-                            Price = 8.26m,
+                            Price = 5.25m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020105"),
                             Name = "Venue 3 Section 2 Row 1 Seat 5",
-                            Price = 3.14m,
+                            Price = 4.61m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020106"),
                             Name = "Venue 3 Section 2 Row 1 Seat 6",
-                            Price = 0.58m,
+                            Price = 8.41m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020107"),
                             Name = "Venue 3 Section 2 Row 1 Seat 7",
-                            Price = 0.71m,
+                            Price = 3.45m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020108"),
                             Name = "Venue 3 Section 2 Row 1 Seat 8",
-                            Price = 4.68m,
+                            Price = 9.32m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020109"),
                             Name = "Venue 3 Section 2 Row 1 Seat 9",
-                            Price = 7.50m,
+                            Price = 0.04m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000302010a"),
                             Name = "Venue 3 Section 2 Row 1 Seat 10",
-                            Price = 7.42m,
+                            Price = 2.44m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020201"),
                             Name = "Venue 3 Section 2 Row 2 Seat 1",
-                            Price = 3.27m,
+                            Price = 5.40m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020202"),
                             Name = "Venue 3 Section 2 Row 2 Seat 2",
-                            Price = 6.44m,
+                            Price = 9.36m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020203"),
                             Name = "Venue 3 Section 2 Row 2 Seat 3",
-                            Price = 6.35m,
+                            Price = 7.22m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020204"),
                             Name = "Venue 3 Section 2 Row 2 Seat 4",
-                            Price = 3.52m,
+                            Price = 3.11m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020205"),
                             Name = "Venue 3 Section 2 Row 2 Seat 5",
-                            Price = 8.96m,
+                            Price = 9.81m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020206"),
                             Name = "Venue 3 Section 2 Row 2 Seat 6",
-                            Price = 6.93m,
+                            Price = 9.20m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020207"),
                             Name = "Venue 3 Section 2 Row 2 Seat 7",
-                            Price = 6.32m,
+                            Price = 0.19m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020208"),
                             Name = "Venue 3 Section 2 Row 2 Seat 8",
-                            Price = 8.53m,
+                            Price = 5.36m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020209"),
                             Name = "Venue 3 Section 2 Row 2 Seat 9",
-                            Price = 4.51m,
+                            Price = 5.52m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000302020a"),
                             Name = "Venue 3 Section 2 Row 2 Seat 10",
-                            Price = 4.82m,
+                            Price = 5.93m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020301"),
                             Name = "Venue 3 Section 2 Row 3 Seat 1",
-                            Price = 1.12m,
+                            Price = 9.45m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020302"),
                             Name = "Venue 3 Section 2 Row 3 Seat 2",
-                            Price = 3.10m,
+                            Price = 1.01m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020303"),
                             Name = "Venue 3 Section 2 Row 3 Seat 3",
-                            Price = 3.68m,
+                            Price = 0.06m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020304"),
                             Name = "Venue 3 Section 2 Row 3 Seat 4",
-                            Price = 9.35m,
+                            Price = 1.79m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020305"),
                             Name = "Venue 3 Section 2 Row 3 Seat 5",
-                            Price = 6.99m,
+                            Price = 4.11m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020306"),
                             Name = "Venue 3 Section 2 Row 3 Seat 6",
-                            Price = 4.61m,
+                            Price = 8.91m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020307"),
                             Name = "Venue 3 Section 2 Row 3 Seat 7",
-                            Price = 5.96m,
+                            Price = 8.46m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020308"),
                             Name = "Venue 3 Section 2 Row 3 Seat 8",
-                            Price = 6.51m,
+                            Price = 9.97m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020309"),
                             Name = "Venue 3 Section 2 Row 3 Seat 9",
-                            Price = 6.53m,
+                            Price = 8.47m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000302030a"),
                             Name = "Venue 3 Section 2 Row 3 Seat 10",
-                            Price = 5.77m,
+                            Price = 0.03m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020401"),
                             Name = "Venue 3 Section 2 Row 4 Seat 1",
-                            Price = 1.65m,
+                            Price = 8.49m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020402"),
                             Name = "Venue 3 Section 2 Row 4 Seat 2",
-                            Price = 8.90m,
+                            Price = 1.72m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020403"),
                             Name = "Venue 3 Section 2 Row 4 Seat 3",
-                            Price = 7.61m,
+                            Price = 2.86m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020404"),
                             Name = "Venue 3 Section 2 Row 4 Seat 4",
-                            Price = 3.11m,
+                            Price = 0.81m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020405"),
                             Name = "Venue 3 Section 2 Row 4 Seat 5",
-                            Price = 5.19m,
+                            Price = 1.65m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020406"),
                             Name = "Venue 3 Section 2 Row 4 Seat 6",
-                            Price = 5.85m,
+                            Price = 3.80m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020407"),
                             Name = "Venue 3 Section 2 Row 4 Seat 7",
-                            Price = 3.69m,
+                            Price = 4.78m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020408"),
                             Name = "Venue 3 Section 2 Row 4 Seat 8",
-                            Price = 6.67m,
+                            Price = 8.72m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020409"),
                             Name = "Venue 3 Section 2 Row 4 Seat 9",
-                            Price = 9.79m,
+                            Price = 3.62m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000302040a"),
                             Name = "Venue 3 Section 2 Row 4 Seat 10",
-                            Price = 0.93m,
+                            Price = 0.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020501"),
                             Name = "Venue 3 Section 2 Row 5 Seat 1",
-                            Price = 4.12m,
+                            Price = 5.43m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020502"),
                             Name = "Venue 3 Section 2 Row 5 Seat 2",
-                            Price = 7.90m,
+                            Price = 1.92m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020503"),
                             Name = "Venue 3 Section 2 Row 5 Seat 3",
-                            Price = 6.37m,
+                            Price = 2.34m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020504"),
                             Name = "Venue 3 Section 2 Row 5 Seat 4",
-                            Price = 3.22m,
+                            Price = 5.86m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020505"),
                             Name = "Venue 3 Section 2 Row 5 Seat 5",
-                            Price = 0.51m,
+                            Price = 6.87m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020506"),
                             Name = "Venue 3 Section 2 Row 5 Seat 6",
-                            Price = 5.33m,
+                            Price = 7.86m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020507"),
                             Name = "Venue 3 Section 2 Row 5 Seat 7",
-                            Price = 8.26m,
+                            Price = 2.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020508"),
                             Name = "Venue 3 Section 2 Row 5 Seat 8",
-                            Price = 3.47m,
+                            Price = 3.06m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000003020509"),
                             Name = "Venue 3 Section 2 Row 5 Seat 9",
-                            Price = 8.63m,
+                            Price = 7.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000302050a"),
                             Name = "Venue 3 Section 2 Row 5 Seat 10",
-                            Price = 2.39m,
+                            Price = 8.03m,
                             RowId = new Guid("00000000-0000-0001-0000-000003020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010101"),
                             Name = "Venue 4 Section 1 Row 1 Seat 1",
-                            Price = 7.17m,
+                            Price = 1.73m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010102"),
                             Name = "Venue 4 Section 1 Row 1 Seat 2",
-                            Price = 9.28m,
+                            Price = 4.76m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010103"),
                             Name = "Venue 4 Section 1 Row 1 Seat 3",
-                            Price = 2.29m,
+                            Price = 6.91m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010104"),
                             Name = "Venue 4 Section 1 Row 1 Seat 4",
-                            Price = 3.26m,
+                            Price = 4.18m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010105"),
                             Name = "Venue 4 Section 1 Row 1 Seat 5",
-                            Price = 4.60m,
+                            Price = 8.50m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010106"),
                             Name = "Venue 4 Section 1 Row 1 Seat 6",
-                            Price = 5.87m,
+                            Price = 4.88m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010107"),
                             Name = "Venue 4 Section 1 Row 1 Seat 7",
-                            Price = 1.41m,
+                            Price = 8.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010108"),
                             Name = "Venue 4 Section 1 Row 1 Seat 8",
-                            Price = 4.01m,
+                            Price = 7.89m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010109"),
                             Name = "Venue 4 Section 1 Row 1 Seat 9",
-                            Price = 8.53m,
+                            Price = 8.41m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000401010a"),
                             Name = "Venue 4 Section 1 Row 1 Seat 10",
-                            Price = 5.79m,
+                            Price = 2.97m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010201"),
                             Name = "Venue 4 Section 1 Row 2 Seat 1",
-                            Price = 1.89m,
+                            Price = 7.22m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010202"),
                             Name = "Venue 4 Section 1 Row 2 Seat 2",
-                            Price = 1.47m,
+                            Price = 0.75m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010203"),
                             Name = "Venue 4 Section 1 Row 2 Seat 3",
-                            Price = 5.41m,
+                            Price = 8.11m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010204"),
                             Name = "Venue 4 Section 1 Row 2 Seat 4",
-                            Price = 9.00m,
+                            Price = 7.27m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010205"),
                             Name = "Venue 4 Section 1 Row 2 Seat 5",
-                            Price = 3.03m,
+                            Price = 1.22m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010206"),
                             Name = "Venue 4 Section 1 Row 2 Seat 6",
-                            Price = 1.64m,
+                            Price = 0.94m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010207"),
                             Name = "Venue 4 Section 1 Row 2 Seat 7",
-                            Price = 6.09m,
+                            Price = 3.76m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010208"),
                             Name = "Venue 4 Section 1 Row 2 Seat 8",
-                            Price = 0.50m,
+                            Price = 3.67m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010209"),
                             Name = "Venue 4 Section 1 Row 2 Seat 9",
-                            Price = 5.60m,
+                            Price = 8.72m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000401020a"),
                             Name = "Venue 4 Section 1 Row 2 Seat 10",
-                            Price = 0.37m,
+                            Price = 3.28m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010301"),
                             Name = "Venue 4 Section 1 Row 3 Seat 1",
-                            Price = 0.51m,
+                            Price = 1.68m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010302"),
                             Name = "Venue 4 Section 1 Row 3 Seat 2",
-                            Price = 6.92m,
+                            Price = 8.73m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010303"),
                             Name = "Venue 4 Section 1 Row 3 Seat 3",
-                            Price = 6.00m,
+                            Price = 9.01m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010304"),
                             Name = "Venue 4 Section 1 Row 3 Seat 4",
-                            Price = 0.84m,
+                            Price = 2.44m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010305"),
                             Name = "Venue 4 Section 1 Row 3 Seat 5",
-                            Price = 7.96m,
+                            Price = 7.77m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010306"),
                             Name = "Venue 4 Section 1 Row 3 Seat 6",
-                            Price = 0.49m,
+                            Price = 4.79m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010307"),
                             Name = "Venue 4 Section 1 Row 3 Seat 7",
-                            Price = 3.99m,
+                            Price = 5.93m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010308"),
                             Name = "Venue 4 Section 1 Row 3 Seat 8",
-                            Price = 7.72m,
+                            Price = 1.46m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010309"),
                             Name = "Venue 4 Section 1 Row 3 Seat 9",
-                            Price = 6.10m,
+                            Price = 2.19m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000401030a"),
                             Name = "Venue 4 Section 1 Row 3 Seat 10",
-                            Price = 8.93m,
+                            Price = 3.51m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010401"),
                             Name = "Venue 4 Section 1 Row 4 Seat 1",
-                            Price = 3.61m,
+                            Price = 3.82m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010402"),
                             Name = "Venue 4 Section 1 Row 4 Seat 2",
-                            Price = 9.75m,
+                            Price = 2.66m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010403"),
                             Name = "Venue 4 Section 1 Row 4 Seat 3",
-                            Price = 5.14m,
+                            Price = 9.87m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010404"),
                             Name = "Venue 4 Section 1 Row 4 Seat 4",
-                            Price = 1.41m,
+                            Price = 7.70m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010405"),
                             Name = "Venue 4 Section 1 Row 4 Seat 5",
-                            Price = 5.86m,
+                            Price = 5.56m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010406"),
                             Name = "Venue 4 Section 1 Row 4 Seat 6",
-                            Price = 9.63m,
+                            Price = 0.99m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010407"),
                             Name = "Venue 4 Section 1 Row 4 Seat 7",
-                            Price = 3.87m,
+                            Price = 2.07m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010408"),
                             Name = "Venue 4 Section 1 Row 4 Seat 8",
-                            Price = 1.61m,
+                            Price = 5.94m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010409"),
                             Name = "Venue 4 Section 1 Row 4 Seat 9",
-                            Price = 5.77m,
+                            Price = 9.58m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000401040a"),
                             Name = "Venue 4 Section 1 Row 4 Seat 10",
-                            Price = 6.58m,
+                            Price = 4.03m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010501"),
                             Name = "Venue 4 Section 1 Row 5 Seat 1",
-                            Price = 1.70m,
+                            Price = 2.70m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010502"),
                             Name = "Venue 4 Section 1 Row 5 Seat 2",
-                            Price = 6.94m,
+                            Price = 4.16m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010503"),
                             Name = "Venue 4 Section 1 Row 5 Seat 3",
-                            Price = 5.40m,
+                            Price = 7.57m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010504"),
                             Name = "Venue 4 Section 1 Row 5 Seat 4",
-                            Price = 1.26m,
+                            Price = 7.91m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010505"),
                             Name = "Venue 4 Section 1 Row 5 Seat 5",
-                            Price = 6.30m,
+                            Price = 0.40m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010506"),
                             Name = "Venue 4 Section 1 Row 5 Seat 6",
-                            Price = 9.91m,
+                            Price = 1.94m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010507"),
                             Name = "Venue 4 Section 1 Row 5 Seat 7",
-                            Price = 9.75m,
+                            Price = 1.07m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010508"),
                             Name = "Venue 4 Section 1 Row 5 Seat 8",
-                            Price = 4.63m,
+                            Price = 2.34m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004010509"),
                             Name = "Venue 4 Section 1 Row 5 Seat 9",
-                            Price = 7.45m,
+                            Price = 1.90m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000401050a"),
                             Name = "Venue 4 Section 1 Row 5 Seat 10",
-                            Price = 6.14m,
+                            Price = 3.18m,
                             RowId = new Guid("00000000-0000-0001-0000-000004010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020101"),
                             Name = "Venue 4 Section 2 Row 1 Seat 1",
-                            Price = 6.50m,
+                            Price = 1.36m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020102"),
                             Name = "Venue 4 Section 2 Row 1 Seat 2",
-                            Price = 5.02m,
+                            Price = 5.94m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020103"),
                             Name = "Venue 4 Section 2 Row 1 Seat 3",
-                            Price = 5.13m,
+                            Price = 1.60m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020104"),
                             Name = "Venue 4 Section 2 Row 1 Seat 4",
-                            Price = 5.52m,
+                            Price = 1.34m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020105"),
                             Name = "Venue 4 Section 2 Row 1 Seat 5",
-                            Price = 9.14m,
+                            Price = 3.62m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020106"),
                             Name = "Venue 4 Section 2 Row 1 Seat 6",
-                            Price = 7.51m,
+                            Price = 0.26m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020107"),
                             Name = "Venue 4 Section 2 Row 1 Seat 7",
-                            Price = 0.55m,
+                            Price = 3.02m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020108"),
                             Name = "Venue 4 Section 2 Row 1 Seat 8",
-                            Price = 8.71m,
+                            Price = 1.73m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020109"),
                             Name = "Venue 4 Section 2 Row 1 Seat 9",
-                            Price = 2.57m,
+                            Price = 3.67m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000402010a"),
                             Name = "Venue 4 Section 2 Row 1 Seat 10",
-                            Price = 1.37m,
+                            Price = 0.97m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020201"),
                             Name = "Venue 4 Section 2 Row 2 Seat 1",
-                            Price = 9.14m,
+                            Price = 6.22m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020202"),
                             Name = "Venue 4 Section 2 Row 2 Seat 2",
-                            Price = 0.95m,
+                            Price = 4.15m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020203"),
                             Name = "Venue 4 Section 2 Row 2 Seat 3",
-                            Price = 5.17m,
+                            Price = 2.96m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020204"),
                             Name = "Venue 4 Section 2 Row 2 Seat 4",
-                            Price = 6.87m,
+                            Price = 2.17m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020205"),
                             Name = "Venue 4 Section 2 Row 2 Seat 5",
-                            Price = 9.45m,
+                            Price = 6.41m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020206"),
                             Name = "Venue 4 Section 2 Row 2 Seat 6",
-                            Price = 9.40m,
+                            Price = 1.82m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020207"),
                             Name = "Venue 4 Section 2 Row 2 Seat 7",
-                            Price = 3.60m,
+                            Price = 8.14m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020208"),
                             Name = "Venue 4 Section 2 Row 2 Seat 8",
-                            Price = 1.27m,
+                            Price = 7.68m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020209"),
                             Name = "Venue 4 Section 2 Row 2 Seat 9",
-                            Price = 0.40m,
+                            Price = 8.97m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000402020a"),
                             Name = "Venue 4 Section 2 Row 2 Seat 10",
-                            Price = 0.66m,
+                            Price = 7.49m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020301"),
                             Name = "Venue 4 Section 2 Row 3 Seat 1",
-                            Price = 5.03m,
+                            Price = 6.13m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020302"),
                             Name = "Venue 4 Section 2 Row 3 Seat 2",
-                            Price = 1.74m,
+                            Price = 5.08m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020303"),
                             Name = "Venue 4 Section 2 Row 3 Seat 3",
-                            Price = 1.99m,
+                            Price = 1.36m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020304"),
                             Name = "Venue 4 Section 2 Row 3 Seat 4",
-                            Price = 6.28m,
+                            Price = 1.95m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020305"),
                             Name = "Venue 4 Section 2 Row 3 Seat 5",
-                            Price = 5.93m,
+                            Price = 7.84m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020306"),
                             Name = "Venue 4 Section 2 Row 3 Seat 6",
-                            Price = 0.83m,
+                            Price = 4.78m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020307"),
                             Name = "Venue 4 Section 2 Row 3 Seat 7",
-                            Price = 8.79m,
+                            Price = 8.42m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020308"),
                             Name = "Venue 4 Section 2 Row 3 Seat 8",
-                            Price = 2.00m,
+                            Price = 8.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020309"),
                             Name = "Venue 4 Section 2 Row 3 Seat 9",
-                            Price = 1.80m,
+                            Price = 9.30m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000402030a"),
                             Name = "Venue 4 Section 2 Row 3 Seat 10",
-                            Price = 5.31m,
+                            Price = 3.09m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020401"),
                             Name = "Venue 4 Section 2 Row 4 Seat 1",
-                            Price = 8.00m,
+                            Price = 0.98m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020402"),
                             Name = "Venue 4 Section 2 Row 4 Seat 2",
-                            Price = 6.62m,
+                            Price = 0.85m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020403"),
                             Name = "Venue 4 Section 2 Row 4 Seat 3",
-                            Price = 7.53m,
+                            Price = 6.82m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020404"),
                             Name = "Venue 4 Section 2 Row 4 Seat 4",
-                            Price = 7.22m,
+                            Price = 6.27m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020405"),
                             Name = "Venue 4 Section 2 Row 4 Seat 5",
-                            Price = 9.69m,
+                            Price = 9.40m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020406"),
                             Name = "Venue 4 Section 2 Row 4 Seat 6",
-                            Price = 5.85m,
+                            Price = 5.15m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020407"),
                             Name = "Venue 4 Section 2 Row 4 Seat 7",
-                            Price = 1.88m,
+                            Price = 8.32m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020408"),
                             Name = "Venue 4 Section 2 Row 4 Seat 8",
-                            Price = 6.88m,
+                            Price = 5.80m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020409"),
                             Name = "Venue 4 Section 2 Row 4 Seat 9",
-                            Price = 9.52m,
+                            Price = 1.34m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000402040a"),
                             Name = "Venue 4 Section 2 Row 4 Seat 10",
-                            Price = 5.61m,
+                            Price = 2.56m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020501"),
                             Name = "Venue 4 Section 2 Row 5 Seat 1",
-                            Price = 6.35m,
+                            Price = 5.24m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020502"),
                             Name = "Venue 4 Section 2 Row 5 Seat 2",
-                            Price = 2.43m,
+                            Price = 7.60m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020503"),
                             Name = "Venue 4 Section 2 Row 5 Seat 3",
-                            Price = 6.31m,
+                            Price = 9.53m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020504"),
                             Name = "Venue 4 Section 2 Row 5 Seat 4",
-                            Price = 1.66m,
+                            Price = 5.87m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020505"),
                             Name = "Venue 4 Section 2 Row 5 Seat 5",
-                            Price = 4.71m,
+                            Price = 5.08m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020506"),
                             Name = "Venue 4 Section 2 Row 5 Seat 6",
-                            Price = 8.01m,
+                            Price = 5.81m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020507"),
                             Name = "Venue 4 Section 2 Row 5 Seat 7",
-                            Price = 9.03m,
+                            Price = 8.47m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020508"),
                             Name = "Venue 4 Section 2 Row 5 Seat 8",
-                            Price = 5.79m,
+                            Price = 2.67m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000004020509"),
                             Name = "Venue 4 Section 2 Row 5 Seat 9",
-                            Price = 9.07m,
+                            Price = 8.77m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000402050a"),
                             Name = "Venue 4 Section 2 Row 5 Seat 10",
-                            Price = 4.17m,
+                            Price = 5.83m,
                             RowId = new Guid("00000000-0000-0001-0000-000004020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010101"),
                             Name = "Venue 5 Section 1 Row 1 Seat 1",
-                            Price = 3.58m,
+                            Price = 1.06m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010102"),
                             Name = "Venue 5 Section 1 Row 1 Seat 2",
-                            Price = 5.74m,
+                            Price = 0.66m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010103"),
                             Name = "Venue 5 Section 1 Row 1 Seat 3",
-                            Price = 1.50m,
+                            Price = 0.64m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010104"),
                             Name = "Venue 5 Section 1 Row 1 Seat 4",
-                            Price = 4.05m,
+                            Price = 1.68m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010105"),
                             Name = "Venue 5 Section 1 Row 1 Seat 5",
-                            Price = 8.37m,
+                            Price = 4.31m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010106"),
                             Name = "Venue 5 Section 1 Row 1 Seat 6",
-                            Price = 2.02m,
+                            Price = 3.55m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010107"),
                             Name = "Venue 5 Section 1 Row 1 Seat 7",
-                            Price = 0.29m,
+                            Price = 1.84m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010108"),
                             Name = "Venue 5 Section 1 Row 1 Seat 8",
-                            Price = 6.11m,
+                            Price = 6.92m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010109"),
                             Name = "Venue 5 Section 1 Row 1 Seat 9",
-                            Price = 6.85m,
+                            Price = 0.76m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000501010a"),
                             Name = "Venue 5 Section 1 Row 1 Seat 10",
-                            Price = 5.58m,
+                            Price = 6.10m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010201"),
                             Name = "Venue 5 Section 1 Row 2 Seat 1",
-                            Price = 5.99m,
+                            Price = 9.10m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010202"),
                             Name = "Venue 5 Section 1 Row 2 Seat 2",
-                            Price = 5.81m,
+                            Price = 1.93m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010203"),
                             Name = "Venue 5 Section 1 Row 2 Seat 3",
-                            Price = 4.17m,
+                            Price = 9.69m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010204"),
                             Name = "Venue 5 Section 1 Row 2 Seat 4",
-                            Price = 4.52m,
+                            Price = 7.84m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010205"),
                             Name = "Venue 5 Section 1 Row 2 Seat 5",
-                            Price = 0.64m,
+                            Price = 7.26m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010206"),
                             Name = "Venue 5 Section 1 Row 2 Seat 6",
-                            Price = 9.78m,
+                            Price = 2.63m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010207"),
                             Name = "Venue 5 Section 1 Row 2 Seat 7",
-                            Price = 0.68m,
+                            Price = 4.60m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010208"),
                             Name = "Venue 5 Section 1 Row 2 Seat 8",
-                            Price = 5.21m,
+                            Price = 3.95m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010209"),
                             Name = "Venue 5 Section 1 Row 2 Seat 9",
-                            Price = 4.44m,
+                            Price = 0.02m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000501020a"),
                             Name = "Venue 5 Section 1 Row 2 Seat 10",
-                            Price = 0.86m,
+                            Price = 8.52m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010301"),
                             Name = "Venue 5 Section 1 Row 3 Seat 1",
-                            Price = 4.78m,
+                            Price = 0.77m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010302"),
                             Name = "Venue 5 Section 1 Row 3 Seat 2",
-                            Price = 3.98m,
+                            Price = 9.60m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010303"),
                             Name = "Venue 5 Section 1 Row 3 Seat 3",
-                            Price = 9.01m,
+                            Price = 3.60m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010304"),
                             Name = "Venue 5 Section 1 Row 3 Seat 4",
-                            Price = 2.05m,
+                            Price = 3.67m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010305"),
                             Name = "Venue 5 Section 1 Row 3 Seat 5",
-                            Price = 1.58m,
+                            Price = 9.51m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010306"),
                             Name = "Venue 5 Section 1 Row 3 Seat 6",
-                            Price = 9.86m,
+                            Price = 5.79m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010307"),
                             Name = "Venue 5 Section 1 Row 3 Seat 7",
-                            Price = 2.69m,
+                            Price = 2.81m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010308"),
                             Name = "Venue 5 Section 1 Row 3 Seat 8",
-                            Price = 7.60m,
+                            Price = 2.76m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010309"),
                             Name = "Venue 5 Section 1 Row 3 Seat 9",
-                            Price = 8.84m,
+                            Price = 4.13m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000501030a"),
                             Name = "Venue 5 Section 1 Row 3 Seat 10",
-                            Price = 5.18m,
+                            Price = 9.29m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010401"),
                             Name = "Venue 5 Section 1 Row 4 Seat 1",
-                            Price = 9.06m,
+                            Price = 3.58m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010402"),
                             Name = "Venue 5 Section 1 Row 4 Seat 2",
-                            Price = 0.26m,
+                            Price = 3.02m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010403"),
                             Name = "Venue 5 Section 1 Row 4 Seat 3",
-                            Price = 0.19m,
+                            Price = 6.85m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010404"),
                             Name = "Venue 5 Section 1 Row 4 Seat 4",
-                            Price = 4.90m,
+                            Price = 0.73m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010405"),
                             Name = "Venue 5 Section 1 Row 4 Seat 5",
-                            Price = 8.99m,
+                            Price = 9.29m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010406"),
                             Name = "Venue 5 Section 1 Row 4 Seat 6",
-                            Price = 9.51m,
+                            Price = 7.58m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010407"),
                             Name = "Venue 5 Section 1 Row 4 Seat 7",
-                            Price = 2.39m,
+                            Price = 7.48m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010408"),
                             Name = "Venue 5 Section 1 Row 4 Seat 8",
-                            Price = 0.75m,
+                            Price = 2.40m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010409"),
                             Name = "Venue 5 Section 1 Row 4 Seat 9",
-                            Price = 6.11m,
+                            Price = 9.22m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000501040a"),
                             Name = "Venue 5 Section 1 Row 4 Seat 10",
-                            Price = 4.93m,
+                            Price = 3.12m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010501"),
                             Name = "Venue 5 Section 1 Row 5 Seat 1",
-                            Price = 2.83m,
+                            Price = 0.57m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010502"),
                             Name = "Venue 5 Section 1 Row 5 Seat 2",
-                            Price = 3.03m,
+                            Price = 8.67m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010503"),
                             Name = "Venue 5 Section 1 Row 5 Seat 3",
-                            Price = 7.29m,
+                            Price = 2.30m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010504"),
                             Name = "Venue 5 Section 1 Row 5 Seat 4",
-                            Price = 1.21m,
+                            Price = 2.50m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010505"),
                             Name = "Venue 5 Section 1 Row 5 Seat 5",
-                            Price = 6.89m,
+                            Price = 0.72m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010506"),
                             Name = "Venue 5 Section 1 Row 5 Seat 6",
-                            Price = 7.80m,
+                            Price = 0.58m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010507"),
                             Name = "Venue 5 Section 1 Row 5 Seat 7",
-                            Price = 5.52m,
+                            Price = 5.17m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010508"),
                             Name = "Venue 5 Section 1 Row 5 Seat 8",
-                            Price = 9.05m,
+                            Price = 8.95m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005010509"),
                             Name = "Venue 5 Section 1 Row 5 Seat 9",
-                            Price = 8.28m,
+                            Price = 5.87m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000501050a"),
                             Name = "Venue 5 Section 1 Row 5 Seat 10",
-                            Price = 2.19m,
+                            Price = 9.71m,
                             RowId = new Guid("00000000-0000-0001-0000-000005010500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020101"),
                             Name = "Venue 5 Section 2 Row 1 Seat 1",
-                            Price = 4.60m,
+                            Price = 8.48m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020102"),
                             Name = "Venue 5 Section 2 Row 1 Seat 2",
-                            Price = 1.09m,
+                            Price = 1.78m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020103"),
                             Name = "Venue 5 Section 2 Row 1 Seat 3",
-                            Price = 8.61m,
+                            Price = 9.91m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020104"),
                             Name = "Venue 5 Section 2 Row 1 Seat 4",
-                            Price = 5.48m,
+                            Price = 7.51m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020105"),
                             Name = "Venue 5 Section 2 Row 1 Seat 5",
-                            Price = 6.65m,
+                            Price = 2.33m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020106"),
                             Name = "Venue 5 Section 2 Row 1 Seat 6",
-                            Price = 6.86m,
+                            Price = 8.72m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020107"),
                             Name = "Venue 5 Section 2 Row 1 Seat 7",
-                            Price = 4.00m,
+                            Price = 4.33m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020108"),
                             Name = "Venue 5 Section 2 Row 1 Seat 8",
-                            Price = 6.71m,
+                            Price = 4.23m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020109"),
                             Name = "Venue 5 Section 2 Row 1 Seat 9",
-                            Price = 9.73m,
+                            Price = 9.43m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000502010a"),
                             Name = "Venue 5 Section 2 Row 1 Seat 10",
-                            Price = 5.77m,
+                            Price = 5.78m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020100")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020201"),
                             Name = "Venue 5 Section 2 Row 2 Seat 1",
-                            Price = 6.59m,
+                            Price = 8.00m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020202"),
                             Name = "Venue 5 Section 2 Row 2 Seat 2",
-                            Price = 9.95m,
+                            Price = 6.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020203"),
                             Name = "Venue 5 Section 2 Row 2 Seat 3",
-                            Price = 4.53m,
+                            Price = 0.05m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020204"),
                             Name = "Venue 5 Section 2 Row 2 Seat 4",
-                            Price = 8.93m,
+                            Price = 8.74m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020205"),
                             Name = "Venue 5 Section 2 Row 2 Seat 5",
-                            Price = 3.78m,
+                            Price = 9.78m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020206"),
                             Name = "Venue 5 Section 2 Row 2 Seat 6",
-                            Price = 2.99m,
+                            Price = 3.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020207"),
                             Name = "Venue 5 Section 2 Row 2 Seat 7",
-                            Price = 2.88m,
+                            Price = 2.34m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020208"),
                             Name = "Venue 5 Section 2 Row 2 Seat 8",
-                            Price = 6.53m,
+                            Price = 6.23m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020209"),
                             Name = "Venue 5 Section 2 Row 2 Seat 9",
-                            Price = 2.80m,
+                            Price = 5.81m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000502020a"),
                             Name = "Venue 5 Section 2 Row 2 Seat 10",
-                            Price = 8.39m,
+                            Price = 6.94m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020200")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020301"),
                             Name = "Venue 5 Section 2 Row 3 Seat 1",
-                            Price = 4.65m,
+                            Price = 2.42m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020302"),
                             Name = "Venue 5 Section 2 Row 3 Seat 2",
-                            Price = 7.19m,
+                            Price = 9.46m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020303"),
                             Name = "Venue 5 Section 2 Row 3 Seat 3",
-                            Price = 6.36m,
+                            Price = 1.99m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020304"),
                             Name = "Venue 5 Section 2 Row 3 Seat 4",
-                            Price = 6.77m,
+                            Price = 4.17m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020305"),
                             Name = "Venue 5 Section 2 Row 3 Seat 5",
-                            Price = 5.30m,
+                            Price = 5.22m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020306"),
                             Name = "Venue 5 Section 2 Row 3 Seat 6",
-                            Price = 9.01m,
+                            Price = 9.36m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020307"),
                             Name = "Venue 5 Section 2 Row 3 Seat 7",
-                            Price = 3.96m,
+                            Price = 4.57m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020308"),
                             Name = "Venue 5 Section 2 Row 3 Seat 8",
-                            Price = 5.06m,
+                            Price = 8.35m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020309"),
                             Name = "Venue 5 Section 2 Row 3 Seat 9",
-                            Price = 2.42m,
+                            Price = 0.21m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000502030a"),
                             Name = "Venue 5 Section 2 Row 3 Seat 10",
-                            Price = 1.04m,
+                            Price = 6.20m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020300")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020401"),
                             Name = "Venue 5 Section 2 Row 4 Seat 1",
-                            Price = 1.60m,
+                            Price = 7.89m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020402"),
                             Name = "Venue 5 Section 2 Row 4 Seat 2",
-                            Price = 0.91m,
+                            Price = 1.12m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020403"),
                             Name = "Venue 5 Section 2 Row 4 Seat 3",
-                            Price = 6.58m,
+                            Price = 4.15m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020404"),
                             Name = "Venue 5 Section 2 Row 4 Seat 4",
-                            Price = 3.91m,
+                            Price = 1.68m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020405"),
                             Name = "Venue 5 Section 2 Row 4 Seat 5",
-                            Price = 7.84m,
+                            Price = 8.07m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020406"),
                             Name = "Venue 5 Section 2 Row 4 Seat 6",
-                            Price = 5.23m,
+                            Price = 9.06m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020407"),
                             Name = "Venue 5 Section 2 Row 4 Seat 7",
-                            Price = 8.92m,
+                            Price = 0.37m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020408"),
                             Name = "Venue 5 Section 2 Row 4 Seat 8",
-                            Price = 1.97m,
+                            Price = 6.60m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020409"),
                             Name = "Venue 5 Section 2 Row 4 Seat 9",
-                            Price = 5.51m,
+                            Price = 5.66m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000502040a"),
                             Name = "Venue 5 Section 2 Row 4 Seat 10",
-                            Price = 9.39m,
+                            Price = 7.84m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020400")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020501"),
                             Name = "Venue 5 Section 2 Row 5 Seat 1",
-                            Price = 2.78m,
+                            Price = 0.51m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020502"),
                             Name = "Venue 5 Section 2 Row 5 Seat 2",
-                            Price = 2.94m,
+                            Price = 0.50m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020503"),
                             Name = "Venue 5 Section 2 Row 5 Seat 3",
-                            Price = 8.28m,
+                            Price = 0.23m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020504"),
                             Name = "Venue 5 Section 2 Row 5 Seat 4",
-                            Price = 7.60m,
+                            Price = 0.70m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020505"),
                             Name = "Venue 5 Section 2 Row 5 Seat 5",
-                            Price = 5.61m,
+                            Price = 2.38m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020506"),
                             Name = "Venue 5 Section 2 Row 5 Seat 6",
-                            Price = 0.13m,
+                            Price = 1.48m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020507"),
                             Name = "Venue 5 Section 2 Row 5 Seat 7",
-                            Price = 5.76m,
+                            Price = 5.88m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020508"),
                             Name = "Venue 5 Section 2 Row 5 Seat 8",
-                            Price = 5.62m,
+                            Price = 0.82m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-000005020509"),
                             Name = "Venue 5 Section 2 Row 5 Seat 9",
-                            Price = 4.69m,
+                            Price = 9.98m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020500")
                         },
                         new
                         {
                             Id = new Guid("00000000-0000-0001-0000-00000502050a"),
                             Name = "Venue 5 Section 2 Row 5 Seat 10",
-                            Price = 1.16m,
+                            Price = 4.64m,
                             RowId = new Guid("00000000-0000-0001-0000-000005020500")
                         });
                 });
@@ -3951,7 +3951,7 @@ namespace Ticketing.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<Guid?>("VenueId")
+                    b.Property<Guid>("VenueId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -4146,21 +4146,27 @@ namespace Ticketing.Migrations
                 {
                     b.HasOne("Ticketing.Model.Section", null)
                         .WithMany("Rows")
-                        .HasForeignKey("SectionId");
+                        .HasForeignKey("SectionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Ticketing.Model.Seat", b =>
                 {
                     b.HasOne("Ticketing.Model.Row", null)
                         .WithMany("Seats")
-                        .HasForeignKey("RowId");
+                        .HasForeignKey("RowId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Ticketing.Model.Section", b =>
                 {
                     b.HasOne("Ticketing.Model.Venue", null)
                         .WithMany("Sections")
-                        .HasForeignKey("VenueId");
+                        .HasForeignKey("VenueId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Ticketing.Model.TicketPurchaseSeat", b =>
