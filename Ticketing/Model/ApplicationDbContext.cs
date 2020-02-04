@@ -17,47 +17,60 @@ namespace Ticketing.Model
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            var events = new List<Event>();
-            for (var e = 0; e < 5; e++)
+            base.OnModelCreating(builder);
+            var events = new List<object>();
+            var venues = new List<Venue>();
+            for (var e = 1; e <= 5; e++)
             {
-                var sections = new List<Section>();
-                for (var s = 0; s < 2; s++)
+                var sections = new List<object>();
+                for (var s = 1; s <= 2; s++)
                 {
-                    var rows = new List<Row>();
-                    for (var r = 0; r < 5; r++)
+                    var rows = new List<object>();
+                    for (var r = 1; r <= 5; r++)
                     {
-                        var seats = new List<Seat>();
-                        for (var t = 0; t < 10; t++)
+                        var seats = new List<object>();
+                        for (var t = 1; t <= 10; t++)
                         {
-                            seats.Add(new Seat
+                            seats.Add(new
                             {
-                                Name = $"Seat {t}",
-                                Price = Math.Round((decimal)new Random().NextDouble() * 10, 2)
+                                Id = new Guid(0, 0, 1, 0, 0, 0, 0, (byte)e, (byte)s, (byte)r, (byte)t),
+                                Name = $"Venue {e} Section {s} Row {r} Seat {t}",
+                                Price = Math.Round((decimal)new Random().NextDouble() * 10, 2),
+                                RowId = new Guid(0, 0, 1, 0, 0, 0, 0, (byte)e, (byte)s, (byte)r, 0)
                             });
                         }
-                        rows.Add(new Row
+                        builder.Entity<Seat>().HasData(seats);
+                        rows.Add(new
                         {
-                            Name = $"Row {r}",
-                            Seats = seats
+                            Id = new Guid(0, 0, 1, 0, 0, 0, 0, (byte)e, (byte)s, (byte)r, 0),
+                            Name = $"Venue {e} Section {s} Row {r}",
+                            SectionId = new Guid(0, 0, 1, 0, 0, 0, 0, (byte)e, (byte)s, 0, 0)
                         });
                     }
-                    sections.Add(new Section
+                    builder.Entity<Row>().HasData(rows);
+                    sections.Add(new
                     {
-                        Name = $"Section {s}",
-                        Rows = rows
+                        Id = new Guid(0, 0, 1, 0, 0, 0, 0, (byte)e, (byte)s, 0, 0),
+                        Name = $"Venue {e} Section {s}",
+                        VenueId = new Guid(0, 0, 1, 0, 0, 0, 0, (byte)e, 0, 0, 0)
                     });
                 }
-                events.Add(new Event
+                builder.Entity<Section>().HasData(sections);
+                var venue = new Venue
                 {
+                    Id = new Guid(0, 0, 1, 0, 0, 0, 0, (byte)e, 0, 0, 0),
+                    Capacity = 100,
+                    Name = $"Venue {e}"
+                };
+                venues.Add(venue);
+                events.Add(new
+                {
+                    Id = new Guid(0, 0, 1, 0, 0, 0, (byte)e, 0, 0, 0, 0),
                     Name = $"Event {e}",
-                    Venue = new Venue
-                    {
-                        Capacity = 100,
-                        Name = $"Venue {e}",
-                        Sections = sections
-                    }
+                    VenueId = venue.Id
                 });
             }
+            builder.Entity<Venue>().HasData(venues);
             builder.Entity<Event>().HasData(events);
         }
 
