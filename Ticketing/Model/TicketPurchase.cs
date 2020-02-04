@@ -13,6 +13,6 @@ namespace Ticketing.Model
         [Column(TypeName = "money")]
         public decimal PaymentAmount { get; set; }
         public string ConfirmationCode { get; set; }
-        public virtual List<TicketPurchaseSeat> TicketPurchaseSeats { get; set; }
+        public virtual IEnumerable<TicketPurchaseSeat> TicketPurchaseSeats { get; set; }
     }
 }

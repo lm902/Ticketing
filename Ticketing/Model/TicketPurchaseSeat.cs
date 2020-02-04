@@ -12,5 +12,7 @@ namespace Ticketing.Model
         public Guid EventSeatId { get; set; }
         [Column(TypeName = "money")]
         public decimal Subtotal { get; set; }
+        [Required]
+        public Guid TicketPurchaseId { get; set; }
     }
 }
